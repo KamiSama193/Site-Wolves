@@ -9,9 +9,11 @@ body {
   background: #f0f0f0;
   color: #333;
   padding: 20px;
-  background: linear-gradient(to bottom, #56a3e2, #A3B018);
+  background: linear-gradient(to bottom, #56a3e2, #ddee25);
   min-height: 100vh;
 }
+
+/* Index css */
 
 .container {
   max-width: 500px;
@@ -55,7 +57,17 @@ h1 {
   background: white;
 }
 
-/* Player roster page */
+.fixed-bottom-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;         
+  z-index: 999;
+  border-radius: 20px;
+}
+
+/* Index css */
+
 .player-list {
   display: flex;
   flex-direction: column;
@@ -94,7 +106,6 @@ h1 {
   margin: 4px 0;
 }
 
-/* Back button */
 .back-btn {
   display: inline-block;
   margin-top: 30px;
@@ -110,11 +121,12 @@ h1 {
   background: #000;
 }
 
-.fixed-bottom-logo {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 100px;         
-  z-index: 999;
-  border-radius: 20px;
+.player-link {
+  text-decoration: none;  
+  color: inherit;         
+}
+
+.player {
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
