@@ -60,7 +60,7 @@ h1 {
 
 .fixed-bottom-logo {
   position: fixed;
-  bottom: 20px;
+  bottom: 5px;
   right: 20px;
   width: 100px;         
   z-index: 999;
@@ -79,6 +79,7 @@ h1 {
 }
 
 .player {
+  width: 147px;
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -93,7 +94,8 @@ h1 {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  margin-top: 25px;
+  object-position: center top;
+  margin-top: 20px;
 }
 
 .info {
@@ -109,6 +111,7 @@ h1 {
 .info p {
   color: #555;
   margin: 4px 0;
+  font-size: 0.95em;
 }
 
 .back-btn {
