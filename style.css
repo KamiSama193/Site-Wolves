@@ -135,7 +135,7 @@ h6 {
 
 .back-btn {
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 20px 0px 20px 0px;
   padding: 12px 30px;
   background: #333;
   color: white;
