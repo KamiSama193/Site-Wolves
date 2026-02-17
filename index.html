@@ -22,7 +22,21 @@
       </a>
     </div>
   </div>
-  <h6 class="footer-text">This was crafted by KamiSama aka <a href="https://www.youtube.com/watch?v=8Pc0AEbfnBM" target="_blank" class="no-style-link">kiki</a></h6>
+  <h6 class="footer-text">This was crafted by KamiSama aka <a onclick="randomizeYouTubeLink(event);" href="#" target="_blank" class="no-style-link">kiki</a></h6>
   <img src="Photos/wolves-logo-512x512-1.png" alt="Club logo" class="fixed-bottom-logo">
+<script>
+    function randomizeYouTubeLink(event) {
+      const videos = [
+        "https://www.youtube.com/watch?v=8Pc0AEbfnBM",
+        "https://www.youtube.com/watch?v=qthxa7m_B4E",
+        "https://www.youtube.com/watch?v=zvzhFn0n_PM",
+        "https://www.youtube.com/watch?v=LvreRLglIBg&list=RDLvreRLglIBg&start_radio=1"
+
+      ];
+      const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+      event.preventDefault();
+      window.open(randomVideo, '_blank');
+    }
+  </script>
 </body>
 </html>
